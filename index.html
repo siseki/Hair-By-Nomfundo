@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hair By Nomfundo | Human hair blends, closures, ponytails and frontals</title>
+<meta name="description" content="Shop premium human hair blends, closures, ponytail bundles and Brazilian frontals from Hair By Nomfundo. Order easily on WhatsApp.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+  --ink:#3a1428; --muted:#7d5a6b; --rose:#d63a7a; --rose-hi:#f06aa0; --rose-lo:#b82a66;
+  --glass:rgba(255,255,255,.38); --glass-hi:rgba(255,255,255,.6); --edge:rgba(255,255,255,.75);
+  --head:'Playfair Display',Georgia,serif; --body:'DM Sans',system-ui,sans-serif;
+}
+html{height:auto;scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 90px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;color:var(--ink);font:400 1rem/1.65 var(--body);background:linear-gradient(160deg,#fff3f8 0%,#ffdcea 45%,#ffc6dc 100%) fixed;-webkit-font-smoothing:antialiased;min-height:100vh}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:rgba(255,236,244,.7);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);z-index:70}
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.bg i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.75}
+.bg i:nth-child(1){width:480px;height:480px;background:#ff9ec4;top:-120px;left:-100px}
+.bg i:nth-child(2){width:420px;height:420px;background:#ffd1e3;top:35%;right:-120px}
+.bg i:nth-child(3){width:520px;height:520px;background:#f78fb8;bottom:-200px;left:25%;opacity:.55}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:84px 0}
+h1,h2,h3{font-family:var(--head);margin:0;font-weight:600;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,5vw,3rem);line-height:1.1;margin-bottom:14px}
+.lede{color:var(--muted);max-width:54ch;font-size:1.08rem;margin:0}
+.sec-head{margin-bottom:40px}
+
+/* glass */
+.glass{position:relative;background:var(--glass);backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%);border:1px solid var(--edge);border-radius:28px;box-shadow:0 14px 38px -14px rgba(214,58,122,.3),inset 0 1px 0 rgba(255,255,255,.9),inset 0 -1px 0 rgba(255,255,255,.25)}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(135deg,rgba(255,255,255,.55),rgba(255,255,255,0) 42%);pointer-events:none}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:9px;font:500 .95rem var(--body);padding:12px 22px;border-radius:99px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .2s,box-shadow .2s,background .2s}
+.btn svg{width:18px;height:18px;fill:currentColor;flex:none}
+.primary{color:#fff;background:linear-gradient(135deg,var(--rose-hi),var(--rose) 60%,var(--rose-lo));box-shadow:0 10px 24px -8px rgba(214,58,122,.7),inset 0 1px 0 rgba(255,255,255,.45)}
+.primary:hover{transform:translateY(-2px);box-shadow:0 14px 28px -8px rgba(214,58,122,.8),inset 0 1px 0 rgba(255,255,255,.45)}
+.ghost{color:var(--rose-lo);background:rgba(255,255,255,.5);border-color:var(--edge);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.ghost:hover{background:rgba(255,255,255,.8)}
+a:focus-visible,button:focus-visible,.track:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+
+/* nav */
+nav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 10px);z-index:60;padding:0 16px}
+.bar{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 12px 10px 24px;border-radius:99px}
+.brand{font:600 1.35rem var(--head);color:var(--ink);text-decoration:none}
+.brand b{color:var(--rose);font-weight:600}
+.links{display:flex;align-items:center;gap:26px}
+.links a:not(.btn){color:var(--muted);text-decoration:none;font-size:.95rem;font-weight:500}
+.links a:not(.btn):hover{color:var(--rose)}
+.links .btn{padding:10px 20px;font-size:.9rem}
+.burger{display:none;width:42px;height:42px;border-radius:50%;border:1px solid var(--edge);background:rgba(255,255,255,.55);color:var(--rose-lo);font-size:1.25rem;cursor:pointer}
+@media(max-width:800px){
+  .burger{display:block}
+  .links{position:absolute;left:16px;right:16px;top:70px;display:none;flex-direction:column;align-items:stretch;gap:0;padding:12px 22px 20px;border-radius:24px;background:rgba(255,246,250,.92);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1px solid var(--edge);box-shadow:0 20px 40px -16px rgba(214,58,122,.35)}
+  .links.open{display:flex}
+  .links a:not(.btn){padding:14px 0;border-bottom:1px solid rgba(214,58,122,.12)}
+  .links .btn{margin-top:16px}
+}
+
+/* hero */
+.hero{padding:56px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.tag{display:inline-block;padding:7px 16px;border-radius:99px;font-size:.88rem;font-weight:500;color:var(--rose-lo);margin-bottom:22px}
+.hero h1{font-size:clamp(2.7rem,7vw,5rem);line-height:1;margin-bottom:22px}
+.hero h1 em{font-style:italic;color:var(--rose)}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.hero-art{padding:12px;border-radius:36px}
+.hero-art img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:26px}
+.float{position:absolute;padding:12px 18px;border-radius:20px;font-size:.9rem;font-weight:500;z-index:2}
+.float.a{left:-18px;bottom:38px}.float.b{right:-12px;top:34px}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-art{max-width:420px}.float.a{left:6px}.float.b{right:6px}}
+
+/* catalog */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.chip{font:500 .92rem var(--body);padding:10px 20px;border-radius:99px;border:1px solid var(--edge);background:rgba(255,255,255,.45);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--muted);cursor:pointer;transition:all .2s}
+.chip:hover{background:rgba(255,255,255,.8)}
+.chip.on{color:#fff;background:linear-gradient(135deg,var(--rose-hi),var(--rose));border-color:transparent;box-shadow:0 8px 20px -8px rgba(214,58,122,.7)}
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));gap:26px}
+.card{padding:10px;display:flex;flex-direction:column;border-radius:30px}
+.slider{position:relative;border-radius:22px;overflow:hidden}
+.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;aspect-ratio:4/5;scroll-behavior:smooth}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:center;position:relative}
+.slide img{width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in}
+.pill{position:absolute;left:10px;bottom:10px;padding:4px 12px;border-radius:99px;font-size:.78rem;font-weight:500;color:var(--ink);background:rgba(255,255,255,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--edge)}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:1px solid var(--edge);background:rgba(255,255,255,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--rose-lo);font-size:1.2rem;cursor:pointer;display:grid;place-items:center;transition:background .2s}
+.arrow:hover{background:rgba(255,255,255,.9)}
+.arrow.prev{left:8px}.arrow.next{right:8px}
+.dots{position:absolute;top:10px;left:0;right:0;display:flex;justify-content:center;gap:5px}
+.dots i{width:6px;height:6px;border-radius:99px;background:rgba(255,255,255,.65);transition:width .25s,background .2s}
+.dots i.on{width:18px;background:#fff}
+.info{padding:16px 8px 8px;display:flex;flex-direction:column;flex:1}
+.cat{font-size:.82rem;color:var(--rose-lo);font-weight:500}
+.info h3{font-size:1.3rem;line-height:1.2;margin:2px 0 6px}
+.price{font-weight:700;font-size:1.05rem}
+.price small{font-weight:400;color:var(--muted);font-size:.82rem}
+.acts{display:flex;gap:10px;margin-top:16px}
+.acts .btn{flex:1;padding:11px 12px;font-size:.9rem}
+
+/* features, steps */
+.cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.feat{padding:32px 28px}
+.ico{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;margin-bottom:18px;background:linear-gradient(135deg,var(--rose-hi),var(--rose));color:#fff;font:600 1.2rem var(--head);box-shadow:0 10px 20px -8px rgba(214,58,122,.6)}
+.feat h3{font-size:1.4rem;margin-bottom:8px}
+.feat p{margin:0;color:var(--muted);font-size:.97rem}
+
+/* contact */
+.contact-box{padding:48px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.contact-list{display:grid;gap:16px}
+.contact-list div{padding:16px 20px;border-radius:20px;background:rgba(255,255,255,.5);border:1px solid var(--edge)}
+.contact-list small{display:block;color:var(--rose-lo);font-weight:500;font-size:.85rem}
+.contact-list a{color:var(--ink);text-decoration:none;font-weight:500}
+@media(max-width:860px){.contact-box{grid-template-columns:1fr;padding:30px 24px}}
+
+/* footer */
+footer{padding:40px 0 100px}
+.foot{padding:36px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.foot h4{font:600 1.1rem var(--head);margin:0 0 12px}
+.foot p,.foot a{color:var(--muted);font-size:.94rem;margin:0}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.foot a{text-decoration:none}.foot a:hover{color:var(--rose)}
+.copy{text-align:center;color:var(--muted);font-size:.86rem;margin-top:22px}
+@media(max-width:780px){.foot{grid-template-columns:1fr;padding:28px 24px}}
+
+/* floating whatsapp */
+.fab{position:fixed;right:18px;bottom:calc(env(safe-area-inset-bottom,0px) + 18px);z-index:65;box-shadow:0 14px 30px -8px rgba(214,58,122,.7),inset 0 1px 0 rgba(255,255,255,.45)}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;display:none;padding:calc(env(safe-area-inset-top,0px) + 70px) 18px calc(env(safe-area-inset-bottom,0px) + 18px);overflow:auto;background:rgba(120,30,70,.28);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.modal.open{display:grid;place-items:center}
+.m-close{position:fixed;top:calc(env(safe-area-inset-top,0px) + 14px);right:18px;z-index:101;width:46px;height:46px;border-radius:50%;border:1px solid var(--edge);background:rgba(255,255,255,.7);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--rose-lo);font-size:1.5rem;cursor:pointer}
+.m-box{width:min(1020px,100%);padding:22px;display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;background:rgba(255,246,250,.72);border-radius:36px}
+.m-stage{position:relative;border-radius:24px;overflow:hidden}
+.m-stage img{display:block;width:100%;aspect-ratio:4/5;max-height:70vh;object-fit:cover}
+.thumbs{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+.thumbs button{width:60px;padding:0;border:2px solid transparent;border-radius:14px;overflow:hidden;background:none;cursor:pointer;opacity:.65;transition:all .2s}
+.thumbs button.on,.thumbs button:hover{opacity:1;border-color:var(--rose)}
+.thumbs img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.m-side h3{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.1;margin:4px 0 8px}
+.m-side .desc{color:var(--muted);margin:0 0 18px}
+.lab{font-weight:500;font-size:.9rem;margin:16px 0 8px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:500 .9rem var(--body);padding:8px 16px;border-radius:99px;border:1px solid var(--edge);background:rgba(255,255,255,.6);color:var(--muted);cursor:pointer;transition:all .2s}
+.opt.on{color:#fff;background:linear-gradient(135deg,var(--rose-hi),var(--rose));border-color:transparent}
+.qty{display:inline-flex;align-items:center;gap:6px;padding:4px;border-radius:99px;background:rgba(255,255,255,.6);border:1px solid var(--edge)}
+.qty button{width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.9);color:var(--rose-lo);font-size:1.2rem;cursor:pointer}
+.qty span{min-width:34px;text-align:center;font-weight:700}
+.m-side .btn{width:100%;margin-top:24px;padding:15px}
+@media(max-width:860px){.m-box{grid-template-columns:1fr;gap:22px;padding:16px;border-radius:30px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+/* order form */
+.step2{display:none}
+.m-side.checkout .step1{display:none}
+.m-side.checkout .step2{display:block}
+.back{background:none;border:0;color:var(--rose-lo);font:500 .92rem var(--body);cursor:pointer;padding:0;margin:4px 0 0}
+.field{margin-top:12px}
+.field label{display:block;font-weight:500;font-size:.88rem;margin-bottom:5px}
+.field input,.field select,.field textarea{width:100%;font:400 16px var(--body);color:var(--ink);padding:12px 14px;border-radius:14px;border:1px solid var(--edge);background:rgba(255,255,255,.72);outline:0;transition:box-shadow .2s,border-color .2s}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--rose);box-shadow:0 0 0 3px rgba(214,58,122,.18)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.summary{margin-top:18px;padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.6);border:1px solid var(--edge);display:grid;gap:6px;font-size:.93rem}
+.summary div{display:flex;justify-content:space-between;gap:12px}
+.summary .tot{border-top:1px solid rgba(214,58,122,.2);padding-top:8px;font-size:1.05rem}
+.note{color:var(--muted);font-size:.82rem;margin:8px 0 0}
+.err{color:#b3123f;font-weight:500;font-size:.9rem;margin:12px 0 0;min-height:1.2em}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<nav>
+  <div class="bar glass">
+    <a class="brand" href="#top">Hair By <b>Nomfundo</b></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <div class="links" id="links">
+      <a href="#catalog">Catalog</a>
+      <a href="#why">Why us</a>
+      <a href="#order">How to order</a>
+      <a href="#contact">Contact</a>
+      <a class="btn primary wa" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="tag glass">Premium hair, delivered to you</span>
+      <h1>Hair that feels as good as it <em>looks.</em></h1>
+      <p class="lede">Human hair blends, lace closures, ponytail bundles and Brazilian frontals. Browse the catalog and place your order in one chat on WhatsApp.</p>
+      <div class="cta">
+        <a class="btn primary" href="#catalog">Shop the catalog</a>
+        <a class="btn ghost wa" href="#" target="_blank" rel="noopener">Chat with us</a>
+      </div>
+    </div>
+    <div class="glass hero-art">
+      <span class="float glass a">Soft and silky</span>
+      <span class="float glass b">Easy to style</span>
+      <img id="heroImg" alt="Featured hair collection">
+    </div>
+  </div>
+</header>
+
+<section id="catalog">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The catalog</h2>
+      <p class="lede">Swipe through each product, tap View for the full details, and order on WhatsApp.</p>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filter products"></div>
+    <div id="grid"></div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head"><h2>Why shop with us</h2><p class="lede">Quality hair and friendly service from start to finish.</p></div>
+    <div class="cards3">
+      <div class="glass feat"><div class="ico">1</div><h3>Quality you can feel</h3><p>Write a short line here about how the hair is sourced and checked before it reaches you.</p></div>
+      <div class="glass feat"><div class="ico">2</div><h3>Simple ordering</h3><p>Pick your style and length, tap order, and chat to us directly. No accounts or checkout forms.</p></div>
+      <div class="glass feat"><div class="ico">3</div><h3>Care advice included</h3><p>Not sure what suits you? Ask us about lengths, textures and how to look after your hair.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="wrap">
+    <div class="sec-head"><h2>How to order</h2><p class="lede">Three easy steps.</p></div>
+    <div class="cards3">
+      <div class="glass feat"><div class="ico">1</div><h3>Choose your style</h3><p>Open a product, pick your length and quantity.</p></div>
+      <div class="glass feat"><div class="ico">2</div><h3>Send on WhatsApp</h3><p>Enter your name, address and delivery choice. We build the order message for you.</p></div>
+      <div class="glass feat"><div class="ico">3</div><h3>Pay and receive</h3><p>We confirm stock and your total, then arrange payment and delivery.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="glass contact-box">
+      <div>
+        <h2>Let’s talk hair</h2>
+        <p class="lede">Questions about lengths, colours or delivery? Send us a message and we’ll reply as soon as we can.</p>
+        <div class="cta"><a class="btn primary wa" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </div>
+      <div class="contact-list">
+        <div><small>WhatsApp</small><a id="phoneLink" href="#">+27 82 000 0000</a></div>
+        <div><small>Instagram</small><a href="#" rel="noopener">@hairbynomfundo</a></div>
+        <div><small>Hours</small>Monday to Saturday, 9am to 6pm</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="glass foot">
+      <div><h4>Hair By Nomfundo</h4><p>Premium human hair blends, closures, ponytail bundles and Brazilian frontals.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="#catalog">Catalog</a></li><li><a href="#why">Why us</a></li><li><a href="#order">How to order</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div><h4>Follow</h4><ul><li><a href="#" rel="noopener">Instagram</a></li><li><a href="#" rel="noopener">Facebook</a></li><li><a href="#" rel="noopener">TikTok</a></li></ul></div>
+    </div>
+    <p class="copy">© 2026 Hair By Nomfundo. All rights reserved.</p>
+  </div>
+</footer>
+
+<a class="btn primary fab wa" href="#" target="_blank" rel="noopener" id="fab"></a>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mName">
+  <button class="m-close" id="mClose" type="button" aria-label="Close">&times;</button>
+  <div class="glass m-box">
+    <div>
+      <div class="m-stage">
+        <img id="mImg" alt="">
+        <span class="pill" id="mView"></span>
+        <button class="arrow prev" id="mPrev" type="button" aria-label="Previous view">&#8249;</button>
+        <button class="arrow next" id="mNext" type="button" aria-label="Next view">&#8250;</button>
+      </div>
+      <div class="thumbs" id="mThumbs"></div>
+    </div>
+    <div class="m-side" id="mSide">
+      <span class="cat" id="mCat"></span>
+      <h3 id="mName"></h3>
+      <div class="price" id="mPrice"></div>
+      <p class="desc" id="mDesc"></p>
+      <div class="step1">
+        <div class="lab">Length</div><div class="opts" id="mLens"></div>
+        <div class="lab">Quantity</div>
+        <div class="qty"><button type="button" id="qMinus" aria-label="Less">&minus;</button><span id="qVal">1</span><button type="button" id="qPlus" aria-label="More">+</button></div>
+        <button class="btn primary" type="button" id="toCheckout">Continue to delivery details</button>
+      </div>
+      <div class="step2">
+        <button class="back" type="button" id="backBtn">&#8249; Change length or quantity</button>
+        <div class="field"><label for="fName">Full name</label><input id="fName" autocomplete="name"></div>
+        <div class="field"><label for="fPhone">Phone number</label><input id="fPhone" type="tel" inputmode="tel" autocomplete="tel"></div>
+        <div class="lab">Delivery</div><div class="opts" id="delOpts"></div>
+        <p class="note" id="delNote"></p>
+        <div id="addr">
+          <div class="field"><label for="fStreet">Street address</label><input id="fStreet" autocomplete="street-address"></div>
+          <div class="row2">
+            <div class="field"><label for="fSuburb">Suburb</label><input id="fSuburb"></div>
+            <div class="field"><label for="fCity">City or town</label><input id="fCity" autocomplete="address-level2"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="fProv">Province</label><select id="fProv"><option value="">Select</option><option>Eastern Cape</option><option>Free State</option><option>Gauteng</option><option>KwaZulu-Natal</option><option>Limpopo</option><option>Mpumalanga</option><option>North West</option><option>Northern Cape</option><option>Western Cape</option></select></div>
+            <div class="field"><label for="fCode">Postal code</label><input id="fCode" inputmode="numeric" autocomplete="postal-code"></div>
+          </div>
+        </div>
+        <div class="field"><label for="fNotes">Notes (optional)</label><textarea id="fNotes" rows="2"></textarea></div>
+        <div class="summary" id="sum"></div>
+        <p class="err" id="err" role="alert"></p>
+        <button class="btn primary" type="button" id="mOrder"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ====== EDIT THESE ====== */
+const WHATSAPP = "27820000000";   // her number: country code + number, no + or spaces
+const BRAND = "Hair By Nomfundo";
+const HERO_IMG = "";              // optional photo URL for the hero
+const L = ['12"','14"','16"','18"','20"','22"','24"'];
+const V = (...n) => n.map(l => ({label:l, src:""}));   // put photo URLs in src to replace placeholders
+/* Delivery options. fee = courier charge in Rand. needsAddress = ask for a delivery address. */
+const DELIVERY = [
+  {id:"door",    label:"Courier to my door",       fee:120, needsAddress:true},
+  {id:"point",   label:"Courier to a pick-up point", fee:80,  needsAddress:true},
+  {id:"collect", label:"Collect from us",           fee:0,   needsAddress:false}
+];
+const DELIVERY_NOTE = "Courier fees are a flat rate. We will confirm your final total on WhatsApp.";
+/* price: a number in Rand (650). Use 0 to show "Price on request". Put photo URLs into each src. */
+const PRODUCTS = [
+  {cat:"Blends",    name:"Silky Straight Blend",      price:650,   desc:"A smooth, lightweight human hair blend with a natural shine. Easy to colour, curl and style.", lens:L.slice(0,6), views:V("Front","Side","Texture","Back")},
+  {cat:"Blends",    name:"Deep Wave Blend",           price:720,   desc:"Bouncy, defined waves that hold their shape wash after wash.",                                   lens:L.slice(1,6), views:V("Front","Side","Texture","Back")},
+  {cat:"Closures",  name:"HD Lace Closure 5x5",       price:950,   desc:"Ultra-thin HD lace that melts into the skin for a natural-looking part.",                          lens:L.slice(0,5), views:V("Top view","Lace detail","Side","Back")},
+  {cat:"Closures",  name:"Transparent Closure 4x4",   price:780,   desc:"A neat 4x4 transparent lace closure with soft, pre-plucked baby hairs.",                          lens:L.slice(0,5), views:V("Top view","Lace detail","Side","Back")},
+  {cat:"Ponytails", name:"Straight Drawstring Ponytail", price:480,desc:"Sleek and secure. Slip it on in seconds for an instant, polished ponytail.",                      lens:L.slice(2,7), views:V("Front","Side","Back")},
+  {cat:"Ponytails", name:"Curly Ponytail Bundle",     price:520,   desc:"Full, bouncy curls for volume and movement with a comfortable fit.",                               lens:L.slice(1,6), views:V("Front","Side","Texture")},
+  {cat:"Frontals",  name:"Brazilian Frontal 13x4",    price:1250, desc:"Brazilian hair with a wide 13x4 frontal for a seamless hairline and styling freedom.",            lens:L.slice(0,6), views:V("Top view","Lace detail","Side","Back")},
+  {cat:"Frontals",  name:"Brazilian Body Wave 13x6",  price:1480, desc:"Soft body wave with an extra-wide 13x6 frontal for a full, natural look.",                         lens:L.slice(1,7), views:V("Top view","Lace detail","Side","Back")}
+];
+/* ======================== */
+
+const wa = m => "https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(m);
+const WA_ICON='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.3z"/></svg>';
+const money = n => "R"+String(n).replace(/\B(?=(\d{3})+(?!\d))/g," ");
+const priceHTML = p => p.price ? `${money(p.price)} <small>each</small>` : `<small>Price on request</small>`;
+
+/* placeholder strands */
+const HAIR=[["#3b2218","#5a3526"],["#2a1a1a","#4a2c22"],["#4a2a20","#7a4a34"],["#1f1414","#3d2a2a"],["#6b3a28","#a0654a"],["#2d1b1b","#5c3a3a"],["#4d2b22","#82513b"],["#241616","#4a3030"]];
+function ph(seed,i){
+  const c=HAIR[seed%HAIR.length]; let s="";
+  for(let k=0;k<16;k++){
+    const x=k*26+((i*9)%20), a=14+((k*7+i*5)%22), w=i%2?a:-a;
+    s+=`<path d="M${x} -10 C${x+w} 120 ${x-w} 260 ${x+w/2} 380 S${x-w} 480 ${x} 520" stroke="${c[k%2]}" stroke-width="${9+(k%3)*2}" fill="none" stroke-linecap="round" opacity="${.75+(k%4)*.06}"/>`;
+  }
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe3ee"/><stop offset="1" stop-color="#ffb3d0"/></linearGradient><linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".28"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><rect width="400" height="500" fill="url(#g)"/>${s}<rect x="${60+i*50}" y="-20" width="90" height="560" fill="url(#h)" transform="rotate(14 200 250)"/></svg>`;
+  return "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(svg);
+}
+const src=(n,i)=>PRODUCTS[n].views[i].src||ph(n,i);
+
+/* generic links */
+const hi="Hi "+BRAND+", I have a question about your hair.";
+document.querySelectorAll(".wa").forEach(a=>{ if(a.id!=="fab") a.href=wa(hi); });
+const fab=document.getElementById("fab"); fab.href=wa(hi); fab.innerHTML=WA_ICON+"Chat on WhatsApp";
+document.getElementById("phoneLink").href="https://wa.me/"+WHATSAPP;
+document.getElementById("heroImg").src=HERO_IMG||ph(0,0);
+
+/* mobile menu */
+const burger=document.getElementById("burger"),links=document.getElementById("links");
+burger.onclick=()=>{const o=links.classList.toggle("open");burger.setAttribute("aria-expanded",o)};
+links.addEventListener("click",e=>{if(e.target.closest("a")){links.classList.remove("open");burger.setAttribute("aria-expanded","false")}});
+
+/* filters */
+const cats=["All",...new Set(PRODUCTS.map(p=>p.cat))];
+const chipsEl=document.getElementById("chips"), grid=document.getElementById("grid");
+let cur="All";
+chipsEl.innerHTML=cats.map(c=>`<button class="chip${c==="All"?" on":""}" type="button" data-c="${c}">${c==="All"?"All products":c}</button>`).join("");
+chipsEl.onclick=e=>{const b=e.target.closest(".chip");if(!b)return;cur=b.dataset.c;[...chipsEl.children].forEach(x=>x.classList.toggle("on",x===b));render()};
+
+function render(){
+  grid.innerHTML="";
+  PRODUCTS.forEach((p,n)=>{
+    if(cur!=="All"&&p.cat!==cur)return;
+    const el=document.createElement("article");
+    el.className="glass card";
+    el.innerHTML=`
+      <div class="slider">
+        <div class="track" tabindex="0" role="region" aria-label="${p.name} photos">
+          ${p.views.map((v,i)=>`<div class="slide"><img src="${src(n,i)}" alt="${p.name}, ${v.label.toLowerCase()}" loading="lazy" data-open="${i}"><span class="pill">${v.label}</span></div>`).join("")}
+        </div>
+        <div class="dots">${p.views.map((_,i)=>`<i class="${i?"":"on"}"></i>`).join("")}</div>
+        <button class="arrow prev" type="button" aria-label="Previous photo">&#8249;</button>
+        <button class="arrow next" type="button" aria-label="Next photo">&#8250;</button>
+      </div>
+      <div class="info">
+        <span class="cat">${p.cat}</span><h3>${p.name}</h3><div class="price">${priceHTML(p)}</div>
+        <div class="acts">
+          <button class="btn ghost" type="button" data-open="0">View</button>
+          <button class="btn primary" type="button" data-open="0">Order</button>
+        </div>
+      </div>`;
+    const track=el.querySelector(".track"),dots=[...el.querySelectorAll(".dots i")];
+    const go=d=>{const w=track.clientWidth,max=p.views.length-1;let i=Math.round(track.scrollLeft/w)+d;i=i<0?max:i>max?0:i;track.scrollTo({left:i*w})};
+    el.querySelector(".prev").onclick=()=>go(-1);
+    el.querySelector(".next").onclick=()=>go(1);
+    track.addEventListener("scroll",()=>{const i=Math.round(track.scrollLeft/track.clientWidth);dots.forEach((d,j)=>d.classList.toggle("on",i===j))},{passive:true});
+    track.addEventListener("keydown",e=>{if(e.key==="ArrowRight")go(1);if(e.key==="ArrowLeft")go(-1)});
+    el.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>openModal(n,+b.dataset.open,b));
+    grid.appendChild(el);
+  });
+}
+render();
+
+/* modal */
+const modal=document.getElementById("modal"),mImg=document.getElementById("mImg"),mThumbs=document.getElementById("mThumbs"),mLens=document.getElementById("mLens"),qVal=document.getElementById("qVal");
+let cp=0,ci=0,len="",qty=1,opener=null;
+function showView(i){
+  const p=PRODUCTS[cp],max=p.views.length-1;
+  ci=i<0?max:i>max?0:i;
+  mImg.src=src(cp,ci); mImg.alt=p.name+", "+p.views[ci].label.toLowerCase();
+  document.getElementById("mView").textContent=p.views[ci].label;
+  [...mThumbs.children].forEach((b,j)=>b.classList.toggle("on",j===ci));
+}
+const $=id=>document.getElementById(id);
+let del=DELIVERY[0];
+function totals(){const p=PRODUCTS[cp];const sub=p.price?p.price*qty:null;return{sub,fee:del.fee,total:sub===null?null:sub+del.fee}}
+function setStep(n){$("mSide").classList.toggle("checkout",n===2);$("err").textContent="";modal.scrollTo(0,0)}
+function updateOrder(){
+  const p=PRODUCTS[cp],t=totals();
+  qVal.textContent=qty;
+  $("sum").innerHTML=`<div><span>${p.name}, ${len} × ${qty}</span><b>${t.sub===null?"On request":money(t.sub)}</b></div><div><span>${del.label}</span><b>${t.fee?money(t.fee):"Free"}</b></div><div class="tot"><span>Total</span><b>${t.total===null?"We will confirm":money(t.total)}</b></div>`;
+  $("addr").style.display=del.needsAddress?"block":"none";
+  $("mOrder").innerHTML=WA_ICON+"Send order on WhatsApp";
+}
+$("delNote").textContent=DELIVERY_NOTE;
+$("delOpts").innerHTML=DELIVERY.map((d,j)=>`<button type="button" class="opt${j?"":" on"}" data-d="${d.id}">${d.label} · ${d.fee?money(d.fee):"Free"}</button>`).join("");
+$("delOpts").onclick=e=>{const b=e.target.closest(".opt");if(!b)return;del=DELIVERY.find(d=>d.id===b.dataset.d);[...$("delOpts").children].forEach(x=>x.classList.toggle("on",x===b));updateOrder()};
+$("toCheckout").onclick=()=>setStep(2);
+$("backBtn").onclick=()=>setStep(1);
+$("mOrder").onclick=()=>{
+  const v=id=>$(id).value.trim();
+  const name=v("fName"),phone=v("fPhone"),street=v("fStreet"),suburb=v("fSuburb"),city=v("fCity"),prov=$("fProv").value,code=v("fCode"),notes=v("fNotes");
+  let err="";
+  if(!name)err="Please enter your full name.";
+  else if(phone.replace(/\D/g,"").length<9)err="Please enter a valid phone number.";
+  else if(del.needsAddress&&(!street||!city||!prov||!code))err="Please complete your delivery address.";
+  $("err").textContent=err;
+  if(err)return;
+  const p=PRODUCTS[cp],t=totals();
+  const lines=[
+    `Hi ${BRAND}, I would like to place an order.`,"",
+    "*Order*",p.name,`Length: ${len}`,`Quantity: ${qty}`,`Hair: ${t.sub===null?"Price on request":money(t.sub)}`,"",
+    "*Delivery*",`${del.label}: ${t.fee?money(t.fee):"Free"}`,
+    ...(del.needsAddress?[`Address: ${street}, ${suburb?suburb+", ":""}${city}, ${prov}, ${code}`]:[]),"",
+    `*Total: ${t.total===null?"to be confirmed":money(t.total)}*`,"",
+    "*My details*",`Name: ${name}`,`Phone: ${phone}`,
+    ...(notes?[`Notes: ${notes}`]:[]),"",
+    "Please confirm availability and payment details."
+  ];
+  window.open(wa(lines.join("\n")),"_blank","noopener");
+};
+function openModal(n,i,from){
+  cp=n;opener=from;const p=PRODUCTS[n];
+  len=p.lens[0];qty=1;del=DELIVERY[0];
+  document.getElementById("mCat").textContent=p.cat;
+  document.getElementById("mName").textContent=p.name;
+  document.getElementById("mPrice").innerHTML=priceHTML(p);
+  document.getElementById("mDesc").textContent=p.desc;
+  mThumbs.innerHTML=p.views.map((v,j)=>`<button type="button" aria-label="${v.label}"><img src="${src(n,j)}" alt=""></button>`).join("");
+  [...mThumbs.children].forEach((b,j)=>b.onclick=()=>showView(j));
+  mLens.innerHTML=p.lens.map((l,j)=>`<button type="button" class="opt${j?"":" on"}" data-l="${l}">${l}</button>`).join("");
+  [...$("delOpts").children].forEach((x,j)=>x.classList.toggle("on",j===0));showView(i);updateOrder();setStep(1);
+  modal.classList.add("open");document.body.style.overflow="hidden";fab.style.display="none";
+  document.getElementById("mClose").focus();
+}
+function closeModal(){modal.classList.remove("open");document.body.style.overflow="";fab.style.display="";if(opener)opener.focus()}
+mLens.onclick=e=>{const b=e.target.closest(".opt");if(!b)return;len=b.dataset.l;[...mLens.children].forEach(x=>x.classList.toggle("on",x===b));updateOrder()};
+document.getElementById("qMinus").onclick=()=>{if(qty>1){qty--;updateOrder()}};
+document.getElementById("qPlus").onclick=()=>{if(qty<20){qty++;updateOrder()}};
+document.getElementById("mClose").onclick=closeModal;
+document.getElementById("mPrev").onclick=()=>showView(ci-1);
+document.getElementById("mNext").onclick=()=>showView(ci+1);
+modal.addEventListener("click",e=>{if(e.target===modal)closeModal()});
+document.addEventListener("keydown",e=>{
+  if(!modal.classList.contains("open"))return;
+  if(e.key==="Escape")closeModal();
+  if(e.key==="ArrowRight")showView(ci+1);
+  if(e.key==="ArrowLeft")showView(ci-1);
+});
+</script>
+</body>
+</html>
